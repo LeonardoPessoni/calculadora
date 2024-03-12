@@ -1,0 +1,162 @@
+/* Define o estilo do corpo da página */
+body {
+    /* Centraliza os elementos horizontalmente e verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Define a altura como 100% da viewport */
+    height: 100vh;
+    /* Remove as margens padrão */
+    margin: 0;
+    /* Define a cor de fundo */
+    background-color: #010049;
+}
+
+/* Define o estilo do elemento raiz do aplicativo Vue */
+#app {
+    /* Alinha o texto ao centro */
+    text-align: center;
+}
+
+/* Define o estilo da calculadora */
+.calculadora {
+    /* Define a largura da calculadora */
+    width: 150px;
+}
+
+/* Define o estilo das linhas de botões */
+.linha {
+    /* Exibe os botões em linha */
+    display: flex;
+}
+
+/* Define o estilo dos botões */
+button {
+    /* Define a largura e altura dos botões */
+    width: 35px;
+    height: 35px;
+    /* Define a margem entre os botões */
+    margin: 1px;
+    /* Define o raio de borda dos botões */
+    border-radius: 5px;
+    /* Remove a borda dos botões */
+    border: none;
+    /* Define a cor de fundo dos botões */
+    background-color: rgb(0, 0, 0);
+    /* Define a cor do texto dos botões */
+    color: white;
+    /* Define a transição para as propriedades dos botões */
+    transition: 400ms;
+}
+
+/* Define o estilo dos botões quando o mouse passa por cima */
+button:hover {
+    /* Altera a cor do texto e do fundo dos botões */
+    color: white;
+    background-color: rgb(29, 29, 29);
+}
+
+/* Define o estilo dos botões quando estão sendo clicados */
+button:active {
+    /* Altera a cor do texto e do fundo dos botões */
+    color: white;
+    background-color: rgb(17, 17, 17);
+}
+
+/* Define o estilo do botão de limpar (AC) */
+.ac {
+    /* Define a cor de fundo e do texto do botão */
+    background-color: red;
+    color: white;
+}
+
+/* Define o estilo do botão de limpar (AC) quando o mouse passa por cima */
+.ac:hover {
+    /* Altera a cor de fundo do botão */
+    background-color: rgb(180, 27, 27);
+}
+
+/* Define o estilo do botão de limpar (AC) quando está sendo clicado */
+.ac:active {
+    /* Altera a cor de fundo e do texto do botão */
+    background-color: rgb(160, 0, 0);
+    color: white;
+}
+
+/* Define o estilo dos botões de operador */
+.operador {
+    /* Define a cor de fundo e do texto dos botões */
+    background-color: rgb(136, 136, 136);
+    color: white;
+}
+
+/* Define o estilo dos botões de operador quando o mouse passa por cima */
+.operador:hover {
+    /* Altera a cor de fundo dos botões */
+    background-color: rgb(102, 102, 102);
+    color: white;
+}
+
+/* Define o estilo dos botões de operador quando estão sendo clicados */
+.operador:active {
+    /* Altera a cor de fundo dos botões */
+    background-color: rgb(75, 75, 75);
+    color: white;
+}
+
+/* Define o estilo do botão de igual */
+.igual {
+    /* Define a cor de fundo e do texto do botão */
+    background-color: rgb(0, 44, 110);
+    color: white;
+}
+
+/* Define o estilo do botão de igual quando o mouse passa por cima */
+.igual:hover {
+    /* Altera a cor de fundo do botão */
+    background-color: rgb(0, 78, 196);
+    color: white;
+}
+
+/* Define o estilo do botão de igual quando está sendo clicado */
+.igual:active {
+    /* Altera a cor de fundo do botão */
+    background-color: rgb(0, 55, 138);
+    color: white;
+}
+
+/* Define o estilo da área de exibição dos números */
+.display {
+    /* Exibe em linha */
+    display: flex;
+    /* Alinha os números à direita */
+    justify-content: end;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Define a altura da área de exibição */
+    height: 30px;
+    /* Define a cor de fundo da área de exibição */
+    background-color: rgb(255, 255, 255);
+    /* Define o raio de borda da área de exibição */
+    border-radius: 5px;
+    /* Define a margem inferior */
+    margin-bottom: 15px;
+}
+
+/* Define o estilo do elemento de número */
+.num {
+    /* Define a margem direita */
+    margin-right: 5px;
+}
+
+/* Define o estilo geral da calculadora */
+.calculadora {
+    /* Adiciona um preenchimento interno */
+    padding: 8px;
+    /* Define o raio de borda */
+    border-radius: 5px;
+    /* Define a cor de fundo */
+    background-color: #303030;
+}
+
+

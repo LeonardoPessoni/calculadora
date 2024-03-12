@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define a codificação do documento -->
+    <meta charset="UTF-8">
+    <!-- Define a largura da viewport e a escala inicial -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página -->
+    <title>Calculadora</title>
+    <!-- Importa a folha de estilo CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Importa o framework Vue.js -->
+    <script src="./vue.js"></script>
+</head>
+<body>
+    <!-- Define o elemento raiz do aplicativo Vue -->
+    <div id="app">
+        <!-- Define a estrutura da calculadora -->
+        <div class="calculadora">
+            <!-- Define a área de exibição dos números -->
+            <div class="display">
+                <div class="num">
+                    <!-- Exibe o número atual na calculadora -->
+                    {{ display }}
+                </div>
+            </div>
+            <!-- Define a linha dos botões -->
+            <div class="linha">
+                <!-- Botão para limpar a calculadora -->
+                <button class="ac" @click="lidarBotao('AC')">AC</button>
+            </div>
+            <!-- Define a linha dos botões numéricos e de operadores -->
+            <div class="linha">
+                <!-- Botões numéricos de 7 a 9 -->
+                <button @click="lidarBotao('7')">7</button>
+                <button @click="lidarBotao('8')">8</button>
+                <button @click="lidarBotao('9')">9</button>
+                <!-- Botão de divisão -->
+                <button class="operador" @click="lidarBotao('/')">/</button>
+            </div>
+            <!-- Define a linha dos botões numéricos e de operadores -->
+            <div class="linha">
+                <!-- Botões numéricos de 4 a 6 -->
+                <button @click="lidarBotao('4')">4</button>
+                <button @click="lidarBotao('5')">5</button>
+                <button @click="lidarBotao('6')">6</button>
+                <!-- Botão de multiplicação -->
+                <button class="operador" @click="lidarBotao('*')">x</button>
+            </div>
+            <!-- Define a linha dos botões numéricos e de operadores -->
+            <div class="linha">
+                <!-- Botões numéricos de 1 a 3 -->
+                <button @click="lidarBotao('1')">1</button>
+                <button @click="lidarBotao('2')">2</button>
+                <button @click="lidarBotao('3')">3</button>
+                <!-- Botão de subtração -->
+                <button class="operador" @click="lidarBotao('-')">-</button>
+            </div>
+            <!-- Define a linha dos botões numéricos e de operadores -->
+            <div class="linha">
+                <!-- Botão decimal -->
+                <button @click="lidarBotao('.')">.</button>
+                <!-- Botão zero -->
+                <button @click="lidarBotao('0')">0</button>
+                <!-- Botão de igual -->
+                <button class="igual" @click="lidarBotao('=')">=</button>
+                <!-- Botão de adição -->
+                <button class="operador" @click="lidarBotao('+')">+</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- Importa o arquivo JavaScript principal -->
+<script src="./index.js"></script>
